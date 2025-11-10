@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Full Project Implementation</title>
+  <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+  <header>
+    <h1>Akshara's Project Hub</h1>
+    <nav>
+      <button onclick="showSection('portfolio')">Portfolio</button>
+      <button onclick="showSection('todo')">To-Do</button>
+      <button onclick="showSection('products')">Products</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="active">
+      <h2>Personal Portfolio</h2>
+      <p>Hello! I'm Akshara — a passionate web developer skilled in HTML, CSS, and JavaScript.</p>
+      <div class="portfolio-items">
+        <div class="card"><h3>Project 1</h3><p>Responsive Portfolio Website</p></div>
+        <div class="card"><h3>Project 2</h3><p>To-Do App with Local Storage</p></div>
+        <div class="card"><h3>Project 3</h3><p>Product Listing Page</p></div>
+      </div>
+    </section>
+
+    <!-- To-Do Section -->
+    <section id="todo">
+      <h2>To-Do List / Notes</h2>
+      <input id="taskInput" type="text" placeholder="Add a new task...">
+      <button onclick="addTask()">Add</button>
+      <ul id="taskList"></ul>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products">
+      <h2>Product Listing</h2>
+      <input type="text" id="searchInput" placeholder="Search products...">
+      <select id="filterSelect" onchange="filterProducts()">
+        <option value="all">All</option>
+        <option value="tech">Tech</option>
+        <option value="fashion">Fashion</option>
+      </select>
+
+      <div id="productContainer" class="product-grid"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Akshara| Built with using HTML, CSS, JS</p>
+  </footer>
+
+  <script src="script3.js"></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  background: linear-gradient(to right, #e3f2fd, #bbdefb);
+  color: #03396c;
+  text-align: center;
+}
+
+header {
+  background: #1565c0;
+  color: white;
+  padding: 1rem;
+  border-radius: 0 0 20px 20px;
+}
+
+nav button {
+  margin: 5px;
+  background: white;
+  color: #1565c0;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+nav button:hover {
+  background: #bbdefb;
+}
+
+section {
+  display: none;
+  padding: 20px;
+}
+section.active {
+  display: block;
+}
+
+.card {
+  background: white;
+  padding: 15px;
+  margin: 10px;
+  display: inline-block;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  width: 200px;
+}
+
+#taskList li {
+  list-style: none;
+  background: white;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  cursor: pointer;
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.product {
+  background: white;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+  width: 150px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
